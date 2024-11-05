@@ -6,13 +6,13 @@ Read more: https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts
 if (!window._flutter) {
   window._flutter = {};
 }
-_flutter.buildConfig = {"engineRevision":"db49896cf25ceabc44096d5f088d86414e05a7aa","builds":[{"compileTarget":"dart2js","renderer":"canvaskit","mainJsPath":"dxatest-canvaskit/main.dart.js"}]};
+_flutter.buildConfig = {"engineRevision":"db49896cf25ceabc44096d5f088d86414e05a7aa","builds":[{"compileTarget":"dart2js","renderer":"canvaskit","mainJsPath":"main.dart.js"}]};
 
 
 const useCanvasKit = true;
 
 const config = {
-  renderer: useCanvasKit ? "canvaskit" : "skwasm",
+  renderer: useCanvasKit ? "canvaskit" : "html",
 };
 _flutter.loader.load({
   config: config,
