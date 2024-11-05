@@ -34,21 +34,16 @@
   <link rel="manifest" href="dxatest-canvaskit/manifest.json">
 
   <!-- Medallia DXA - Testes V8 Tech -->
-  <!-- <link rel="dns-prefetch" href="//cdn.decibelinsight.net">
-  <link rel="dns-prefetch" href="//collection.decibelinsight.net"> -->
+  <link rel="dns-prefetch" href="//cdn.decibelinsight.net">
+  <link rel="dns-prefetch" href="//collection.decibelinsight.net">
 </head>
 
 <body>
-
-  <!-- Amplitude
-  <script src="https://cdn.amplitude.com/libs/analytics-browser-2.11.1-min.js.gz">  </script>
-  <script src="https://cdn.amplitude.com/libs/plugin-session-replay-browser-1.8.0-min.js.gz">  </script>
-  
-
-  <script src="inspectlet.js"></script>
-  <script src="amplitude.js"></script>
-  <script src="sessionrewind.js"></script> -->
   <script src="dxatest-canvaskit/medallia.js"></script>
+  <script type="text/javascript">
+    decibelInsight("sendTrackedEvent", "text_field_submitted");
+    decibelInsight("sendTrackedEvent", "flutter_button_clicked");
+  </script>
   <script src="dxatest-canvaskit/flutter_bootstrap.js" async></script>
 </body>
 
